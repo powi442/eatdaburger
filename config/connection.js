@@ -2,7 +2,7 @@
 var mysql = require("mysql");
 
 var connection = mysql.createConnection({
-  port: var port = process.env.PORT || 3500;,
+  port: 3306,
   host: "localhost",
   user: "root",
   password: "spanish",
