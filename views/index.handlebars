@@ -6,7 +6,7 @@
   <div class="col-lg-6">
     <h2>Burgers that haven't been devoured!</h2>
 
-    <ul>
+    <ol>
       {{#each burgers}}
         {{#unless this.devoured}}
           <li>
@@ -20,12 +20,12 @@
           </li>
         {{/unless}}
       {{/each}}
-    </ul>
+    </ol>
   </div>
   <div class="col-lg-6">
     <h2>Burgers that have been devoured</h2>
 
-    <ul>
+    <ol>
       {{#each burgers}}
         {{#if this.devoured}}
           <li>
@@ -40,17 +40,21 @@
           </li>
         {{/if}}
       {{/each}}
-    </ul>
+    </ol>
   </div>
 </div>
 <hr>
+  <div class="text-center">
   <h2 class="text-center">Add a Burger You Want to Eat</h2>
   <form class="create-update-form" action="/" method="POST">
 
     <div class="form-group">
-      <label for="ca">Burger Type</label>
+      <label for="ca">BurgerType:</label>
       <input type="text" id="ca" name="name">
     </div>
 
-    <button type="submit">Add Burger</button>
+
+    <button type="submit">Add a Burger</button>
   </form>
+
+</div>
